@@ -11,34 +11,48 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="120dp"
         app:cardCornerRadius="5dp"
         android:layout_gravity="center"
-        android:layout_margin="40dp"
+        android:layout_margin="7dp"
         app:cardElevation="20dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:weightSum="2">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:paddingLeft="20dp"
-                android:gravity="bottom"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:text="JellyBean"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:paddingLeft="20dp"
-                android:gravity="top"
-                android:textSize="20dp"
-                android:text="4.1"/>
+                android:src="@drawable/bo_1"
+                android:scaleType="fitXY"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="JellyBean"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:gravity="top"
+                    android:textSize="20dp"
+                    android:text="4.1"/>
+            </LinearLayout>
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
 
