@@ -10,26 +10,12 @@
     tools:context=".MainActivity">
 
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="abcd"
-        android:inputType="text"
-        android:drawableLeft="@drawable/baseline_person_24"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="abcd"
-        android:inputType="textEmailAddress" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="abcd"
-        android:inputType="textPassword" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="111111111111"
-        android:inputType="phone" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:text="Nut"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
