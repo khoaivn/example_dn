@@ -20,6 +20,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static List<Item> items = Arrays.asList(new Item("AAAA", 6,7, 8),
+            new Item("BBBB", 3, 5,9));
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
