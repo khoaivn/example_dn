@@ -10,12 +10,9 @@
     tools:context=".MainActivity">
 
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
-        android:text="Nut"
-        android:textSize="30dp"
-        android:layout_gravity="center_horizontal"/>
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
