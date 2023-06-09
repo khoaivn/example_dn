@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.LauncherActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ListView listView = findViewById(R.id.list_view);
-        List<Item> items = Arrays.asList(new Item("AAAA", 6,7, 8));
+        List<Item> items = Arrays.asList(new Item("AAAA", 6,7, 8),
+                new Item("BBBB", 3, 5,9));
         CustomAdapter customAdapter = new CustomAdapter(this, R.layout.item_for_listview, items);
 //        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, items);
         listView.setAdapter(customAdapter);
@@ -69,6 +71,15 @@ class CustomAdapter extends ArrayAdapter<Item> {
 //        holder.imageView.setImageResource(item.getImageResource());
         holder.titleTextView.setText(item.getFull_name());
         holder.descriptionTextView.setText(Float.toString(item.getDTB()));
+
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), DetailActivity.class);
+                myIntent.putExtra("position", position); //Optional parameters
+                view.getContext().startActivity(myIntent);
+            }
+        });
 
         return row;
     }
